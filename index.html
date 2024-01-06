@@ -62,21 +62,7 @@
             from { transform: translate(-50%, 0%) rotate(0deg); }
             to { transform: translate(-50%, -1000%) rotate(360deg); }
         }
-        .matrix-text {
-            color: #00FF00; /* Green color */
-            font-size: 12px;
-            position: absolute;
-            top: 120%; /* Position below the view counter */
-            left: 0;
-            width: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            animation: matrix 10s infinite linear;
-        }
-        @keyframes matrix {
-            0% { top: 120%; }
-            100% { top: -30%; } /* Move the text upwards */
-        }
+
     </style>
 </head>
 <body>
@@ -129,12 +115,6 @@
   )_   _  |
     |_| |_|
     </div>
-    <!-- Matrix-like stream of text -->
-    <div class="matrix-text">
-        434,434,434,434,434<br>
-        434,434,434,434,434<br>
-        434,434,434,434,434<br>
-        <!-- Repeat as needed -->
-    </div>
+ 
 </body>
 </html>
