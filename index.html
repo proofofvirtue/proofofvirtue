@@ -6,7 +6,7 @@
         body {
             background-color: black;
             color: white;
-            font-family: 'Times New Roman', serif;
+            font-family: 'Courier New', monospace; /* Changed for better ASCII art display */
             margin: 0;
             padding: 0;
             text-align: center;
@@ -15,15 +15,29 @@
             padding: 2in;
             display: inline-block;
             text-align: left;
+            position: relative; /* Added for positioning the background image */
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 65%;
+            height: 100%;
             background-image: url('https://media.newyorker.com/photos/63852dca581289ae52c99e28/master/pass/Hutson_whale_music.gif');
-            background-size: 65%; /* Increased from 50% to 65% */
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            opacity: 0.15; /* Reduced from 0.3 to 0.15 */
+            opacity: 0.15;
+            z-index: -1; /* Ensures the image stays behind the text */
         }
         a {
             color: #4CAF50; /* A spiritual green color */
             text-decoration: none;
+        }
+        a:before {
+            content: '🚪'; /* Doorway emoji */
+            margin-right: 5px;
         }
         a:hover {
             text-decoration: underline;
@@ -38,7 +52,14 @@
     </style>
 </head>
 <body>
+    <pre>
+     ____  ____  ____  _  _  ____  __  __  __ _  ____  ____ 
+    (  _ \(  __)(  _ \/ )( \(  __)(  )(  )(  ( \(  __)/ ___)
+     ) __/ ) _)  )   /) \/ ( ) _)  )( /__\ /    / ) _) \___ \
+    (__)  (____)(__\_)\____/(____)(__)(_)\_)__)(____)(____/
+    </pre>
     <div class="container">
+        <div class="background-image"></div> <!-- Background image container -->
         <h1>Proof of Virtue</h1>
         <p>...</p>
         
