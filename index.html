@@ -8,7 +8,13 @@
             color: white;
             font-family: 'Times New Roman', serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            padding: 2in;
+            display: inline-block;
+            text-align: left;
         }
         a {
             color: #4CAF50; /* A spiritual green color */
@@ -19,29 +25,44 @@
         }
         h1, h2 {
             color: #FFD700; /* A golden color for headings */
+            font-size: 1.5em; /* Adjust size as needed */
         }
         p {
             line-height: 1.6;
         }
+        .puzzle-piece {
+            display: block;
+            margin: 0 auto;
+            background-image: url('https://media.newyorker.com/photos/63852dca581289ae52c99e28/master/pass/Hutson_whale_music.gif'); /* Replace with your puzzle piece image */
+            width: 50px; /* Adjust size as needed */
+            height: 50px; /* Adjust size as needed */
+            animation: rotate 2s linear infinite;
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
-    <h1>Proof of Virtue</h1>
-    <p>...</p>
-    
-    <h2>Cybershamanism</h2>
-    <p>....</p>
-    <a href="#">Read more</a>
+    <div class="container">
+        <h1>Proof of Virtue</h1>
+        <p>...</p>
+        
+        <h2>Cybershamanism</h2>
+        <p>....</p>
+        <a href="#">Read more</a>
 
-    <h2>Rewiring the Algorithm</h2>
-    <p>...</p>
-    <a href="#">Read more</a>
+        <h2>Rewiring the Algorithm</h2>
+        <p>...</p>
+        <a href="#">Read more</a>
 
-    <h2>Priestess Corner</h2>
-    <p>...</p>
-    <a href="#">Read more</a>
+        <h2>Priestess Corner</h2>
+        <p>...</p>
+        <a href="#">Read more</a>
 
-    <p>For further contemplation and exploration, <a href="#">click here</a>.</p>
+        <p>For further contemplation and exploration, <a href="#">click here</a>.</p>
+    </div>
+    <div class="puzzle-piece"></div>
 </body>
 </html>
-
