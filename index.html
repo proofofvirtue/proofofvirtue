@@ -13,10 +13,10 @@
             position: relative;
         }
         .container {
-            margin: 0 auto; /* Center the container */
-            padding-top: 1.5in; /* Adjust top padding to move content up */
-            width: 52%; /* 20% narrower than full width */
-            text-align: center; /* Center-align text within the container */
+            margin: 0 auto;
+            padding-top: 0.5in; /* Reduced top padding to move content up */
+            width: 52%;
+            text-align: center;
         }
         .background-image {
             position: absolute;
@@ -43,8 +43,9 @@
             opacity: 0.2;
             z-index: 0;
         }
-        h1, h2, p {
-            text-align: center; /* Center-align headings and paragraphs */
+        h1, h2 {
+            color: #FFD700; /* Changed to a yellow color */
+            text-align: center;
         }
         a {
             color: #4CAF50;
@@ -61,25 +62,27 @@
             font-size: 8px;
             line-height: 10px;
             white-space: pre;
+            position: absolute; /* Make the ASCII art position absolute */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
             animation: rotate 60s infinite linear;
         }
         @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
         }
     </style>
 </head>
 <body>
     <div class="neon-text">434,434,434</div>
-    <pre>
- ________   ___  ___   _________   ___   ________   _____ ______      
-|\   __  \ |\  \|\  \ |\___   ___\|\  \ |\   ____\ |\   _ \  _   \    
-\ \  \|\  \\ \  \\\  \\|___ \  \_|\ \  \\ \  \___|_\ \  \\\__\ \  \   
- \ \   __  \\ \  \\\  \    \ \  \  \ \  \\ \_____  \\ \  \\|__| \  \  
-  \ \  \ \  \\ \  \\\  \    \ \  \  \ \  \\|____|\  \\ \  \    \ \  \ 
-   \ \__\ \__\\ \_______\    \ \__\  \ \__\ ____\_\  \\ \__\    \ \__\
-    \|__|\|__| \|_______|     \|__|   \|__||\_________\\|__|     \|__|
-                                           \|_________|               
+    <pre class="ascii-art">
+   _   _     
+  | |_| |_ 
+ _)       |
+(_   33   |
+  )_   _  |
+    |_| |_|
     </pre>
     <div class="container">
         <div class="background-image"></div>
@@ -110,16 +113,6 @@
             <a href="https://www.cutercounter.com/" target="_blank" class="no-emoji"><img src="https://www.cutercounter.com/hits.php?id=hmxockxq&nd=8&style=6" border="0" alt="visitor counter"></a>
             <!-- End of CuterCounter Code -->
         </center>
-
-        <!-- ASCII Art Galaxy Spiral (Placeholder) -->
-        <div class="ascii-art">
-   _   _     
-  | |_| |_ 
- _)       |
-(_   33   |
-  )_   _  |
-    |_| |_|
-        </div>
     </div>
 </body>
 </html>
