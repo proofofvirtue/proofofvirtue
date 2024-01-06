@@ -10,12 +10,16 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            position: relative;
         }
         .container {
             padding: 2in;
+            padding-top: 1.5in; /* Moved up by reducing top padding */
             display: inline-block;
             text-align: left;
             position: relative;
+            width: 52%; /* Reduced width to 20% narrower */
+            left: 24%; /* Centering after width reduction */
         }
         .background-image {
             position: absolute;
@@ -30,6 +34,17 @@
             background-position: center;
             opacity: 0.15;
             z-index: -1;
+        }
+        .neon-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            color: #434343;
+            font-size: 2em;
+            text-align: center;
+            opacity: 0.2;
+            z-index: 0;
         }
         a {
             color: #4CAF50;
@@ -65,7 +80,8 @@
     </style>
 </head>
 <body>
- <pre>
+    <div class="neon-text">434,434,434</div>
+    <pre>
  ________   ___  ___   _________   ___   ________   _____ ______      
 |\   __  \ |\  \|\  \ |\___   ___\|\  \ |\   ____\ |\   _ \  _   \    
 \ \  \|\  \\ \  \\\  \\|___ \  \_|\ \  \\ \  \___|_\ \  \\\__\ \  \   
@@ -114,11 +130,6 @@
   )_   _  |
     |_| |_|
         </div>
-    </div>
-</body>
-</html>
-
-        </center>
     </div>
 </body>
 </html>
