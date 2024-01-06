@@ -12,7 +12,7 @@
       text-align: center;
     }
     .container {
-      padding: 2in;
+      padding-top: 1in; /* Reduced top padding to move text upward */
       display: inline-block;
       text-align: left;
       position: relative;
@@ -53,7 +53,12 @@
     a.no-emoji:before {
       content: none;
     }
-    .ascii-art {
+    .ascii-art-autism {
+      font-size: 12px; /* Increased size */
+      line-height: 14px;
+      white-space: pre;
+    }
+    .ascii-art-puzzle {
       font-size: 8px;
       line-height: 10px;
       white-space: pre;
@@ -90,7 +95,7 @@
   <div class="background-text">434,434,434</div>
 
   <div class="flex-container">
-    <pre class="ascii-art">
+    <pre class="ascii-art-autism">
  ________   ___  ___   _________   ___   ________   _____ ______      
 |\   __  \ |\  \|\  \ |\___   ___\|\  \ |\   ____\ |\   _ \  _   \    
 \ \  \|\  \\ \  \\\  \\|___ \  \_|\ \  \\ \  \___|_\ \  \\\__\ \  \   
@@ -100,7 +105,7 @@
     \|__|\|__| \|_______|     \|__|   \|__||\_________\\|__|     \|__|
                                            \|_________|               
     </pre>
-    <pre class="ascii-art">
+    <pre class="ascii-art-puzzle">
 _  _    
 | |_| |_ 
 _)      |
@@ -140,4 +145,3 @@ _)      |
   </div>
 </body>
 </html>
-
