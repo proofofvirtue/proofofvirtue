@@ -13,13 +13,10 @@
             position: relative;
         }
         .container {
-            padding: 2in;
-            padding-top: 1.5in; /* Moved up by reducing top padding */
-            display: inline-block;
-            text-align: left;
-            position: relative;
-            width: 52%; /* Reduced width to 20% narrower */
-            left: 24%; /* Centering after width reduction */
+            margin: 0 auto; /* Center the container */
+            padding-top: 1.5in; /* Adjust top padding to move content up */
+            width: 52%; /* 20% narrower than full width */
+            text-align: center; /* Center-align text within the container */
         }
         .background-image {
             position: absolute;
@@ -46,6 +43,9 @@
             opacity: 0.2;
             z-index: 0;
         }
+        h1, h2, p {
+            text-align: center; /* Center-align headings and paragraphs */
+        }
         a {
             color: #4CAF50;
             text-decoration: none;
@@ -56,16 +56,6 @@
         }
         a:hover {
             text-decoration: underline;
-        }
-        h1, h2 {
-            color: #FFD700;
-            font-size: 1.5em;
-        }
-        p {
-            line-height: 1.6;
-        }
-        a.no-emoji:before {
-            content: none;
         }
         .ascii-art {
             font-size: 8px;
