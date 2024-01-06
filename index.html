@@ -15,7 +15,7 @@
         }
         .container {
             margin: 0 auto;
-            padding-top: 0.3in;
+            padding-top: 0.2in;
             width: 52%;
             text-align: center;
         }
@@ -55,14 +55,17 @@
             position: absolute;
             bottom: 0;
             left: 50%;
-            transform: translate(-50%, 0%) rotate(0deg);
-            animation: rotate 60s infinite linear;
+            transform: translate(-50%, 0%);
+            animation: bounceX 5s linear infinite alternate, bounceY 3s linear infinite alternate;
         }
-        @keyframes rotate {
-            from { transform: translate(-50%, 0%) rotate(0deg); }
-            to { transform: translate(-50%, -1000%) rotate(360deg); }
+        @keyframes bounceX {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(100%); }
         }
-
+        @keyframes bounceY {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(100%); }
+        }
     </style>
 </head>
 <body>
@@ -108,12 +111,17 @@
     </div>
     <!-- ASCII Art Puzzle Piece (Placeholder) -->
     <div class="ascii-art">
-   _   _     
-  | |_| |_ 
- _)       |
-(_   33   |
-  )_   _  |
-    |_| |_|
+       _   _     
+      | |_| |_ 
+     _)       |
+    (_   33   |
+      )_   _  |
+        |_| |_|
+    </div>
+ 
+</body>
+</html>
+
     </div>
  
 </body>
