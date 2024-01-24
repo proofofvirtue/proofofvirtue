@@ -5,75 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAWS</title>
     <style>
-        /* Set the background image */
+        /* Set the background to black and centralize content */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            background-image: url('peenwad.jpeg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial', sans-serif;
+            background-color: black;
+            color: gold;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
-        /* Shimmering Gold Text Effect */
-        @keyframes shimmer {
-            0% {
-                background-position: -500%;
-            }
-            100% {
-                background-position: 500%;
-            }
+        /* Style for the list */
+        ol {
+            list-style: none;
+            padding: 0;
         }
 
-        .gold-text {
-            font-size: 2em; /* Adjust size as needed */
-            color: #FFD700; /* Base gold color */
-            background-image: linear-gradient(
-                to right, 
-                #FFD700 20%, 
-                #FFFFFF 40%, 
-                #FFD700 60%
-            );
-            background-size: 200% auto;
-            background-clip: text;
-            text-fill-color: transparent;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: shimmer 2s linear infinite;
+        li {
+            font-size: 1.5em;
+            margin: 10px 0;
         }
 
-        /* Example of rotating text */
-        .rotating-text {
-            animation: rotate 5s linear infinite;
-        }
-
-        @keyframes rotate {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
+        /* ASCII Art */
+        .ascii-art {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+            font-size: 0.8em;
+            line-height: 1.2;
         }
     </style>
 </head>
 <body>
-    <h1 class="gold-text rotating-text">The 11 Holy Laws of Autism</h1>
+    <h1>The 11 Holy Laws of Autism</h1>
     <ol>
-        <li class="gold-text">Love Harder</li>
-        <li class="gold-text">Love Harder</li>
-        <li class="gold-text">Love Harder</li>
-        <li class="gold-text">Love Harder</li>
-        <li class="gold-text">Love Harder</li>
-        <li class="gold-text">Love Harder</li>
-        <li class="gold-text">Love Harder</li>
-        <li class="gold-text">Love Harder</li>
-        <li class="gold-text">Love Harder</li>
-        <li class="gold-text">Love Harder</li>
-        <li class="gold-text">Love Harder</li>
+        <li>Love Harder</li>
+        <li>Love Harder</li>
+        <li>Love Harder</li>
+        <li>Love Harder</li>
+        <li>Love Harder</li>
+        <li>Love Harder</li>
+        <li>Love Harder</li>
+        <li>Love Harder</li>
+        <li>Love Harder</li>
+        <li>Love Harder</li>
+        <li>Love Harder</li>
     </ol>
+    <div class="ascii-art">
+        [ASCII Art of Glass of Milk Here]
+    </div>
 </body>
 </html>
+
 
