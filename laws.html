@@ -3,74 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The 11 Holy Laws of Autism</title>
+    <title>LAWS</title>
     <style>
+        /* Set the background image */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
+            background-image: url('/peenwad.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial', sans-serif;
         }
 
-        .background-image {
-            background-image: url('peenwad.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+        /* Shimmering Gold Text Effect */
+        @keyframes shimmer {
+            0% {
+                background-position: -500%;
+            }
+            100% {
+                background-position: 500%;
+            }
         }
 
-        .content {
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-            padding: 20px;
+        .gold-text {
+            font-size: 2em; /* Adjust size as needed */
+            color: #FFD700; /* Base gold color */
+            background-image: linear-gradient(
+                to right, 
+                #FFD700 20%, 
+                #FFFFFF 40%, 
+                #FFD700 60%
+            );
+            background-size: 200% auto;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 2s linear infinite;
         }
 
-        h1 {
-            font-size: 2.5em;
-            /* Add shimmering effect */
+        /* Example of rotating text */
+        .rotating-text {
+            animation: rotate 5s linear infinite;
         }
 
-        ol {
-            list-style: none;
-            counter-reset: list-counter;
-            padding: 0;
-        }
-
-        li {
-            font-size: 1.8em;
-            margin: 10px 0;
-            counter-increment: list-counter;
-            /* Add WordArt style */
-        }
-
-        li::before {
-            content: counter(list-counter) ". ";
-            /* Style for the numbers */
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
 <body>
-    <div class="background-image">
-        <div class="content">
-            <h1>The 11 Holy Laws of Autism</h1>
-            <ol>
-                <li>Love Harder</li>
-                <li>Love Harder</li>
-                <li>Love Harder</li>
-                <li>Love Harder</li>
-                <li>Love Harder</li>
-                <li>Love Harder</li>
-                <li>Love Harder</li>
-                <li>Love Harder</li>
-                <li>Love Harder</li>
-                <li>Love Harder</li>
-                <li>Love Harder</li>
-            </ol>
-        </div>
-    </div>
+    <h1 class="gold-text rotating-text">The 11 Holy Laws of Autism</h1>
+    <ol>
+        <li class="gold-text">Love Harder</li>
+        <li class="gold-text">Love Harder</li>
+        <li class="gold-text">Love Harder</li>
+        <li class="gold-text">Love Harder</li>
+        <li class="gold-text">Love Harder</li>
+        <li class="gold-text">Love Harder</li>
+        <li class="gold-text">Love Harder</li>
+        <li class="gold-text">Love Harder</li>
+        <li class="gold-text">Love Harder</li>
+        <li class="gold-text">Love Harder</li>
+        <li class="gold-text">Love Harder</li>
+    </ol>
 </body>
 </html>
+
