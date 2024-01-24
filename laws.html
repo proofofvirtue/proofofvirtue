@@ -9,10 +9,11 @@
             margin: 0;
             padding: 0;
             height: 100%;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial', sans-serif;
         }
 
         .background-image {
-            background-image: url('holy.jpg');
+            background-image: url('YOUR_IMAGE_LINK_HERE');
             background-size: cover;
             background-position: center;
             height: 100%;
@@ -24,23 +25,31 @@
 
         .content {
             color: white;
-            background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
             padding: 20px;
         }
 
         h1 {
-            font-size: 2em;
+            font-size: 2.5em;
             /* Add shimmering effect */
         }
 
-        ul {
+        ol {
             list-style: none;
+            counter-reset: list-counter;
+            padding: 0;
         }
 
         li {
-            font-size: 1.5em;
+            font-size: 1.8em;
             margin: 10px 0;
-            /* Add glittery effect */
+            counter-increment: list-counter;
+            /* Add WordArt style */
+        }
+
+        li::before {
+            content: counter(list-counter) ". ";
+            /* Style for the numbers */
         }
     </style>
 </head>
@@ -48,19 +57,19 @@
     <div class="background-image">
         <div class="content">
             <h1>The 11 Holy Laws of Autism</h1>
-            <ul>
-                <li>Love harder</li>
-                <li>Love harder</li>
-                <li>Love harder</li>
-                <li>Love harder</li>
-                <li>Love harder</li>
-                <li>Love harder</li>
-                <li>Love harder</li>
-                <li>Love harder</li>
-                <li>Love harder</li>
-                <li>Love harder</li>
-                <li>Love harder</li>
-            </ul>
+            <ol>
+                <li>Love Harder</li>
+                <li>Love Harder</li>
+                <li>Love Harder</li>
+                <li>Love Harder</li>
+                <li>Love Harder</li>
+                <li>Love Harder</li>
+                <li>Love Harder</li>
+                <li>Love Harder</li>
+                <li>Love Harder</li>
+                <li>Love Harder</li>
+                <li>Love Harder</li>
+            </ol>
         </div>
     </div>
 </body>
